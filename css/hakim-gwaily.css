@@ -1,0 +1,402 @@
+/* Start Variables */
+:root {
+    --section-padding: 60px;
+}
+
+/* End Variables */
+/* Start Components */
+.section-heading {
+    color: #ebeceb;
+    font-size: 100px;
+    text-align: center;
+    font-weight: 800;
+    margin: 0;
+}
+
+@media (max-width:767px) {
+    .section-heading {
+        font-size: 60px;
+    }
+}
+
+/* End Components */
+/* Start Glabal Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f3c2;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Small Screen */
+@media (min-width:768) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium Screen */
+@media (min-width:992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large Screen */
+@media (min-width:1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* End Glabal Rules */
+/* Start Header */
+.header {
+    padding: 0;
+    background-color: white;
+    position: relative;
+}
+
+.header .main-header {
+    font-size: 20px;
+}
+
+/* .header::before {
+    content: "";
+    background-image: linear-gradient(to right, red 10%, blue 10%, blue 20%, green 20%, green 30%, black 30%, black 40%, gold 40%, gold 50%, #999ce7 50%, #999ce7 60%, #d64d00 60%, #d64d00 70%, #00c0f9 70%, #00c0f9 80%, #ffc0f9 80%, #ffc0f9 90%, #660000 90%, #660000 100%);
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+
+} */
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    width: 60px;
+}
+
+.header .links ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: space-around;
+}
+
+
+.header .links ul li a {
+    display: block;
+    margin: 5px;
+    text-decoration: none;
+    padding: 15px;
+    transition: 0.3s;
+    color: #333;
+    font-size: 30px;
+    background-color: #f6f6f6;
+    border-radius: 25%;
+}
+
+.header .links ul li a:hover {
+    color: #37b127;
+    background-color: #57116d;
+    border-radius: 50%;
+
+}
+
+@media (max-width:767px) {
+    .header h1 {
+        margin: 0.67em 0;
+        font-size: 15px;
+    }
+
+    .header .logo {
+        width: 35px;
+    }
+
+    .header .links ul li a {
+        padding: 7px;
+        font-size: 11px;
+        font-weight: bold;
+    }
+
+    .header .container {
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* End Header */
+/* Start Landing Section */
+.landing {
+    background-image: url(../media/images/landing.png);
+    background-size: cover;
+    height: calc(100vh - 46px);
+    position: relative;
+}
+
+.landing h1 {
+    text-indent: 10px;
+    margin: 0;
+    font-weight: bold;
+    font-size: 50px;
+    color: gold;
+    position: absolute;
+}
+
+@media (max-width:767px) {
+    .landing h1 {
+        text-indent: 10px;
+        margin: 0;
+        font-weight: bold;
+        font-size: 33px;
+        color: gold;
+        position: absolute;
+        left: 38%;
+    }
+}
+
+/* End Landing Section */
+
+
+
+
+
+
+/* Start Hakim */
+.hakim {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.hakim .container .flex {
+    display: flex;
+    justify-content: space-between;
+    border: 5px solid mediumturquoise;
+    padding: 10px;
+}
+
+.hakim .container .image img {
+    width: 216px;
+}
+
+.hakim .container .do {
+    font-size: 30px;
+    text-align: center;
+}
+
+.hakim .images figcaption {
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+
+.hakim .description {
+    text-align: center;
+}
+
+.hakim .description h1 {
+    font-size: 45px;
+}
+
+.hakim .description h4 {
+    font-size: 20px;
+}
+
+.hakim .images {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.hakim .img-1 {
+    width: 350px;
+}
+
+.hakim .img-2 {
+    width: 450px;
+}
+
+@media (max-width:991px) {
+    .hakim .img-2 {
+        width: 379px;
+    }
+
+    .hakim .img-1 {
+        padding-bottom: 20px;
+    }
+
+    .hakim .images {
+        justify-content: center;
+        display: grid;
+    }
+}
+
+@media (max-width:767px) {
+    .hakim .container .do {
+        font-size: 18px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .hakim .container .flex {
+        display: flex;
+        justify-content: space-between;
+        border: 5px solid mediumturquoise;
+        padding: 2px;
+    }
+
+    .hakim .container .image img {
+        width: 128px;
+    }
+
+    .hakim .description h1 {
+        font-size: 30px;
+    }
+
+    .hakim .description h4 {
+        font-size: 15px;
+    }
+
+    .hakim .images {
+        justify-content: center;
+        display: grid;
+    }
+
+    .hakim .img-1 {
+        padding-bottom: 20px;
+        width: 284px;
+    }
+
+    .hakim .img-2 {
+        width: 284px;
+    }
+
+    .hakim {
+        padding-top: 60px;
+        padding-bottom: 0;
+    }
+}
+
+/* End Hakim */
+
+
+
+/* Start Footer */
+.footer {
+    background-color: #b0daff;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.footer ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    gap: 20px;
+    font-size: 22px;
+    padding-right: 30px;
+}
+
+.footer ul li .facebook:hover {
+    color: blue;
+    font-size: 30px;
+}
+
+.footer ul li .whatsapp:hover {
+    color: green;
+    font-size: 30px;
+}
+
+.footer ul li .mail:hover {
+    color: #3ccbf4;
+    font-size: 30px;
+}
+
+.footer ul li .telegram:hover {
+    color: #29a4e7;
+    font-size: 30px;
+}
+
+.footer ul li a {
+    color: black;
+    transition: .5s;
+}
+
+.footer .words span {
+    color: black;
+}
+
+.footer .words i {
+    color: white;
+    font-size: 20px;
+}
+
+.footer .words {
+    line-height: 3;
+    font-weight: bold;
+
+}
+
+.footer .words p {
+    padding-left: 25px;
+    margin-bottom: 0;
+    padding-bottom: 5px;
+}
+
+@media (max-width:767px) {
+    .footer {
+        flex-direction: column-reverse;
+    }
+
+    .footer ul {
+        padding-right: 5px;
+        padding-left: 5px;
+        margin: 0;
+        margin-top: 5px;
+    }
+
+    .footer .words i {
+        font-size: 15px;
+    }
+
+    .footer .words p {
+        padding-left: 0px;
+        margin: 0;
+    }
+
+    .footer .words {
+        line-height: 2;
+        font-size: 15px;
+        margin-top: 10px;
+    }
+}
+
+/* End Footer */
